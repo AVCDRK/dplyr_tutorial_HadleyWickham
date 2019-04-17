@@ -2,6 +2,10 @@ library(dplyr)
 library(ggplot2)
 
 ## 1. Filter function ##
+flights <- tbl_df(read.csv("data/flights.csv",header = TRUE))
+airports <- tbl_df(read.csv("data/airports.csv",header = TRUE))
+planes <- tbl_df(read.csv("data/planes.csv",header = TRUE))
+weather <- tbl_df(read.csv("data/weather.csv",header = TRUE))
 
 df = data.frame(
   color = c("blue", "black", "blue", "blue", "black"),
